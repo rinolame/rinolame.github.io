@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abdulkabir Monsurat Olajumoke — Data &amp; Visualization Analyst</title>
+<meta name="description" content="Portfolio of Abdulkabir Monsurat Olajumoke — data cleaning, SQL, and Power BI dashboard projects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grid-backdrop" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top">A.M.O</a>
+    <nav class="site-nav" id="site-nav">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero wrap">
+    <p class="eyebrow">// data &amp; visualization analyst</p>
+    <h1 class="hero-name">Abdulkabir Monsurat<br>Olajumoke</h1>
+    <p class="hero-tagline">I clean messy data, query it until it makes sense, and turn it into dashboards people actually understand.</p>
+
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#projects">View projects</a>
+      <a class="btn btn-ghost" href="assets/Abdulkabir_Monsurat_Olajumoke_CV.docx" download>Download CV</a>
+      <a class="btn btn-ghost" href="https://www.linkedin.com/in/monsurat-olajumoke-abdulkabir-4154643b7" target="_blank" rel="noopener">LinkedIn ↗</a>
+    </div>
+
+    <!-- Signature element: hand-built trend line, echoing the Netflix growth chart in her own project work -->
+    <svg class="pulse-line" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true">
+      <polyline points="0,95 120,93 240,90 320,86 400,60 480,40 560,20 640,14 720,18 800,10 880,22 960,34 1040,44 1120,50 1200,46"/>
+    </svg>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="wrap two-col">
+      <div class="col-label">
+        <p class="section-index">01</p>
+        <h2>About</h2>
+      </div>
+      <div class="col-content">
+        <p>I'm a recent graduate trained in data analytics through Schull Technologies' ST@40 Digital Skills Training Initiative — cleaning raw datasets, writing SQL to answer real questions, and building Power BI dashboards that tell a clear story. My background is in Aquaculture and Fisheries, which gave me a research mindset: ask a precise question, check the data carefully, and don't trust a number until you've verified it.</p>
+        <p>The six projects below take real public datasets and carry them end to end — cleaned, queried, and visualized. I'm looking for an internship where I can keep building on that foundation.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="wrap two-col">
+      <div class="col-label">
+        <p class="section-index">02</p>
+        <h2>Skills</h2>
+      </div>
+      <div class="col-content">
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3>Querying &amp; Prep</h3>
+            <ul class="chip-list">
+              <li>SQL</li><li>Python (pandas)</li><li>Data cleaning</li><li>EDA</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Visualization</h3>
+            <ul class="chip-list">
+              <li>Power BI</li><li>DAX</li><li>Power Query</li><li>Dashboard design</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Tools</h3>
+            <ul class="chip-list">
+              <li>Excel</li><li>Google Colab</li><li>Git / GitHub</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="wrap">
+      <div class="section-heading-row">
+        <p class="section-index">03</p>
+        <h2>Projects</h2>
+      </div>
+
+      <!-- Project 1 -->
+      <article class="project">
+        <div class="project-media">
+          <img src="assets/images/netflix.png" alt="Netflix Content Analysis Power BI dashboard showing total titles, movies vs TV shows, ratings, genres, and a world map of content origin.">
+        </div>
+        <div class="project-body">
+          <p class="project-stack">SQL · Power BI</p>
+          <h3>Netflix Content Analysis</h3>
+          <p>Cleaned and standardized an ~8,800-row Netflix titles dataset in SQL — resolving duplicate records, filling in missing director/cast/country/rating values, and parsing duration into structured numeric fields.</p>
+          <ul class="project-points">
+            <li>Wrote SQL queries to answer content-growth, top-country, and genre-popularity questions</li>
+            <li>Built a Power BI dashboard covering totals, ratings, genres, and a world map of content origin</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="project reverse">
+        <div class="project-media">
+          <img src="assets/images/retail.png" alt="Online Retail Sales Analysis Power BI dashboard showing revenue, average order value, top products, and monthly trends.">
+        </div>
+        <div class="project-body">
+          <p class="project-stack">Python · Power BI</p>
+          <h3>Online Retail Sales Analysis</h3>
+          <p>Cleaned a transactional retail dataset in Python (pandas) — handling missing values, formatting issues, and outliers before analysis.</p>
+          <ul class="project-points">
+            <li>Built a dashboard tracking revenue, average order value, and top-selling items</li>
+            <li>Surfaced peak sales hours and top 10 products by quantity sold</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="project">
+        <div class="project-media">
+          <img src="assets/images/titanic.png" alt="Titanic Survival Analysis Power BI dashboard showing survival rate, passenger class distribution, and survival by demographic.">
+        </div>
+        <div class="project-body">
+          <p class="project-stack">Python · Power BI</p>
+          <h3>Titanic Survival Analysis</h3>
+          <p>Explored survival patterns by passenger class, gender, age group, and title using Python.</p>
+          <ul class="project-points">
+            <li>Built an interactive dashboard summarizing overall survival rate (38%)</li>
+            <li>Broke down survival by class, gender, age bracket, and passenger title</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Project 4 -->
+      <article class="project reverse">
+        <div class="project-media project-media-pair">
+          <img src="assets/images/health-patient.png" alt="Health Analytics patient overview dashboard showing patient trends, gender distribution, age bracket, and department visits.">
+          <img src="assets/images/health-clinical.png" alt="Health Analytics clinical and financial dashboard showing diagnosis distribution and billing by department.">
+        </div>
+        <div class="project-body">
+          <p class="project-stack">Power BI</p>
+          <h3>Health Analytics Dashboard</h3>
+          <p>Designed a multi-page dashboard covering patient overview, clinical diagnosis distribution, and billing across hospital departments.</p>
+          <ul class="project-points">
+            <li>Visualized readmission rates by department and patient trends over time</li>
+            <li>Broke down billing by department and by diagnosis to highlight cost patterns</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Project 5 -->
+      <article class="project">
+        <div class="project-media project-media-code">
+          <pre><code>SELECT DISTINCT sl.suspect_id, sl.name,
+    al.door_accessed, al.access_time,
+    sl.alibi, cl.call_time
+FROM suspects_large sl
+JOIN access_logs_large al
+    ON al.suspect_id = sl.suspect_id
+JOIN call_records_large cl
+    ON sl.suspect_id = cl.suspect_id
+WHERE al.door_accessed = 'Vault Room'
+  AND al.success_flag = 'TRUE'
+  AND cl.recipient_relation = 'Victim'
+ORDER BY al.access_time;</code></pre>
+        </div>
+        <div class="project-body">
+          <p class="project-stack">SQL</p>
+          <h3>Suspect Investigation Analysis</h3>
+          <p>Modeled a multi-table investigative dataset — suspects, door access logs, and call records — to reconstruct a timeline of events.</p>
+          <ul class="project-points">
+            <li>Used joins and time-based filtering to narrow down suspect activity</li>
+            <li>Cross-referenced access logs, call logs, and alibis to identify the most consistent leads</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Project 6 -->
+      <article class="project reverse">
+        <div class="project-media project-media-code">
+          <pre><code>CREATE TABLE students (
+  student_id INT PRIMARY KEY,
+  name VARCHAR(100),
+  department_id INT,
+  FOREIGN KEY (department_id)
+    REFERENCES departments(department_id)
+);
+
+CREATE TABLE courses (
+  course_id INT PRIMARY KEY,
+  instructor_id INT,
+  department_id INT
+);</code></pre>
+        </div>
+        <div class="project-body">
+          <p class="project-stack">SQL</p>
+          <h3>Student Management System — Database Design</h3>
+          <p>Designed a relational database schema to manage student, course, department, and instructor records.</p>
+          <ul class="project-points">
+            <li>Defined primary and foreign keys to enforce relationships across tables</li>
+            <li>Structured the schema to support common academic queries cleanly</li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section class="section" id="certifications">
+    <div class="wrap two-col">
+      <div class="col-label">
+        <p class="section-index">04</p>
+        <h2>Certifications</h2>
+      </div>
+      <div class="col-content">
+        <div class="edu-item">
+          <h3>Data Analysis</h3>
+          <p class="edu-meta">ST@40 Digital Skills Training Initiative — Schull Technologies (2026)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section" id="education">
+    <div class="wrap two-col">
+      <div class="col-label">
+        <p class="section-index">05</p>
+        <h2>Education</h2>
+      </div>
+      <div class="col-content">
+        <div class="edu-item">
+          <h3>B.Sc. Aquaculture and Fisheries</h3>
+          <p class="edu-meta">University of Ilorin, Nigeria — Expected October 2026</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact-section" id="contact">
+    <div class="wrap">
+      <p class="section-index">06</p>
+      <h2>Let's talk</h2>
+      <p class="contact-lead">Open to data analytics and visualization internships.</p>
+      <div class="contact-links">
+        <a href="mailto:monsuratabdulkabir63@gmail.com">monsuratabdulkabir63@gmail.com</a>
+        <a href="tel:+2349063972959">0906 397 2959</a>
+        <a href="https://www.linkedin.com/in/monsurat-olajumoke-abdulkabir-4154643b7" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="https://github.com/rinolame" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>&copy; 2026 Abdulkabir Monsurat Olajumoke</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
