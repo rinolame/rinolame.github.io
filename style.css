@@ -121,6 +121,27 @@ img { max-width: 100%; display: block; }
   position: relative;
 }
 
+.hero-top {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 48px;
+  align-items: start;
+}
+
+.hero-photo {
+  justify-self: end;
+  flex-shrink: 0;
+}
+
+.hero-photo img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--accent);
+  box-shadow: 0 10px 30px rgba(30,34,34,0.14);
+}
+
 .eyebrow {
   font-family: var(--mono);
   font-size: 13.5px;
@@ -451,6 +472,19 @@ img { max-width: 100%; display: block; }
   }
 
   .hero { padding-top: 64px; }
+
+  .hero-top {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .hero-photo {
+    justify-self: start;
+    order: -1;
+  }
+  .hero-photo img {
+    width: 128px;
+    height: 128px;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
